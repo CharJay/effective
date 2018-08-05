@@ -2,7 +2,11 @@ package com.effective.section2.demo1.impl.netease;
 
 import com.effective.section2.demo1.MusicApp;
 
-//网易云音乐移动端实现
+/**
+ * 网易云音乐移动端实现
+ * @author Administrator
+ *
+ */
 public class NetEaseMusicApp implements MusicApp {
     @Override
     public void play() {

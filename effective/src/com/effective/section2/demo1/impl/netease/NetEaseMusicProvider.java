@@ -4,7 +4,11 @@ import com.effective.section2.demo1.MusicApp;
 import com.effective.section2.demo1.MusicProvider;
 
 
-//网易云音乐服务提供者实现
+/**
+ * 网易云音乐服务提供者实现
+ * @author Administrator
+ *
+ */
 public class NetEaseMusicProvider implements MusicProvider {
     @Override
     public MusicApp getMusicApp() {

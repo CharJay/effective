@@ -9,13 +9,26 @@ import java.util.concurrent.ConcurrentHashMap;
 public class AppStore {
     private AppStore() {
     }
-
+    
+    /**
+     * 服务
+     */
     private static final Map<String, MusicProvider> providers=new ConcurrentHashMap<String, MusicProvider>();
-
+    
+    /**
+     * 注册服务
+     * @param name
+     * @param p
+     */
     public static void registerProvider(String name, MusicProvider p) {
         providers.put(name, p);
     }
 
+    /**
+     * 下载App
+     * @param name
+     * @return
+     */
     public static MusicApp installApp(String name) {
         MusicProvider p = providers.get(name);
         if (p == null) {
